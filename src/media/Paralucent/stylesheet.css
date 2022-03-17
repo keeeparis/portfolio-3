@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'paralucent';
+    src: url('Paralucent-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'paralucent';
+    src: url('Paralucent-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'paralucent';
+    src: url('Paralucent-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'paralucent';
+    src: url('Paralucent-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'paralucent';
+    src: url('Paralucent-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'paralucent';
+    src: url('Paralucent-DemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+ @font-face {
+    font-family: 'paralucent';
+    src: url('Paralucent-Thin.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'paralucent';
+    src: url('Paralucent-ThinItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
