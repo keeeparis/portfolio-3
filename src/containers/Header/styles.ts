@@ -37,7 +37,7 @@ export const NavLink = styled.a`
     margin-bottom: -3px;
     margin-left: 20px;
     flex-direction: column;
-    font-family: niveau-grotesk, sans-serif;
+    font-family: 'niveau-grotesk';
     color: #f8f6f1;
     font-size: 17px;
     font-weight: 300;
@@ -76,7 +76,7 @@ export const SignIn = styled.a`
     border-style: solid;
     border-width: 1px;
     border-color: rgba(248, 246, 241, 0.2);
-    font-family: niveau-grotesk, sans-serif;
+    font-family: 'niveau-grotesk';
     transition-duration: .3s;
 
     &:hover > div:nth-child(1) {
