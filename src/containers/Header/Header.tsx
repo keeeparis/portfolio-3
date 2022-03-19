@@ -2,6 +2,7 @@ import * as H from './styles'
 import LogoIcon from '../../media/logo-full.svg'
 import { Inner } from '../../styles'
 import { useInView } from 'react-intersection-observer'
+import Button from '../../components/Button/Button'
 
 const Header = () => {
     const [ref, inView] = useInView({
@@ -27,13 +28,7 @@ const Header = () => {
                             </H.Navigation>
                         </H.NavWrapper>
 
-                        <H.SignIn>
-                            <H.HoverBackground />
-                            <H.Text>
-                                <H.SignInText>Sign In</H.SignInText>
-                                <H.SignInText>Sign In</H.SignInText>
-                            </H.Text>
-                        </H.SignIn>
+                        <Button>Sign In</Button>
                     </H.Content>
                 </Inner>
             </H.Wrapper>

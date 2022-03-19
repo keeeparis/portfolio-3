@@ -97,7 +97,7 @@ export const SignUpButton = styled.a`
     z-index: 1;
     display: block;
     width: 40px;
-    margin-right: -20px;
+    margin-right: -13px;
     background-image: url(${arrowIcon});
     background-position: 50% 50%;
     background-size: auto;

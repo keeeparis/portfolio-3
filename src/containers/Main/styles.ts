@@ -64,6 +64,14 @@ export const translateLeftToRight = keyframes`
         transform: translateX(0)
     }
 `
+export const traslateFromBelow = keyframes`
+    0%, 75% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+`
 /* STYLES */
 
 export const Main = styled.main`

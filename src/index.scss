@@ -4,6 +4,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    outline: 0;
 }
 
 body {
@@ -15,6 +17,12 @@ body {
 a {
     text-decoration: none;
     color: black;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 1.1em;
+    font-weight: 600;
 }
 
 h3 {
@@ -52,6 +60,6 @@ p {
 ::-webkit-scrollbar-thumb {
     background-color: #583bac;
 }
-::-webkit-scrollbar-button {
-    background-color: rgb(255, 197, 5);
-}
+// ::-webkit-scrollbar-button {
+//     background-color: rgb(255, 197, 5);
+// }
