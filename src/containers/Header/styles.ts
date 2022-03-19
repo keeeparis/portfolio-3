@@ -1,9 +1,26 @@
-import styled from "styled-components";
+import styled, { css, keyframes } from "styled-components";
+import { OverFlowHidden } from "../../styles";
+import { inViewProp } from "../../types";
+
+export const fadeInFromBelow = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateY(75%);
+    }
+    75% {
+        opacity: 0;
+        transform: translateY(45%);
+    }     
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`
 
 export const Header = styled.header`
     display: block;
 `
-export const Wrapper = styled.div`
+export const Wrapper = styled(OverFlowHidden)`
     position: absolute;
     top: 80px;
     left: 0;
@@ -11,16 +28,16 @@ export const Wrapper = styled.div`
     z-index: 1;
     padding: 0 80px;
 `
-export const Inner = styled.div`
-    position: relative;
-    width: 100%;
-    max-width: 1230px;
-    margin: 0 auto;
-`
-export const Content = styled.div`
+export const Content = styled.div<inViewProp>`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    opacity: 0;
+    animation: ${({ inView }) => 
+        inView && css`
+            ${fadeInFromBelow} linear 1s forwards;
+        `
+    };
 `
 export const Logo = styled.div``
 export const LogoImage = styled.img``

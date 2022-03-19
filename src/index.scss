@@ -8,11 +8,38 @@
 
 body {
     font-family: 'paralucent';
+    color: #222b40;
+    font-weight: 500;
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+h3 {
+    margin-top: 0px;
+    font-size: 34px;
+    line-height: 1.2em;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+h4 {
+    margin-top: 0px;
+    margin-bottom: 14px;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+p {
+    margin-bottom: 0px;
+    color: rgba(34, 43, 64, 0.7);
+    font-size: 17px;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
 }
 
 ::-webkit-scrollbar {
