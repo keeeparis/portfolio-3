@@ -1,11 +1,10 @@
 import styled, { css } from "styled-components";
-import { fadeInFromBelow } from "../Header/styles";
-import { fadeIn, Section, translateLeftToRight } from "../Main/styles";
-import { inViewProp } from '../../types'
+import { fadeIn, translateLeftToRight, fadeInFromBelow } from "../../styles";
+import { inViewProp } from '../../types';
 
-export const Wrapper = styled(Section)`
-    padding-top: 56px;
-    padding-bottom: 56px;
+export const Wrapper = styled.section`
+    position: relative;
+    padding: 56px 80px;
 `
 export const Columns = styled.div`
     display: flex;
@@ -97,7 +96,7 @@ export const PlayButton = styled.div`
         transition: all 300ms ease;
     }
 `
-export const H3 = styled.h3<{ inView: boolean }>`
+export const H3 = styled.h3<inViewProp>`
     text-transform: capitalize;
     opacity: 0;
     animation: ${({ inView }) => 

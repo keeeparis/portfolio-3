@@ -1,12 +1,11 @@
 import styled, { css } from "styled-components"
-import { OverFlowHidden } from "../../styles"
-import { fadeIn, fadeInImage, fadeInLeftToRight, fadeInLine, scaleUp, Section, spin } from "../Main/styles"
 import arrowIcon from '../../media/arrow-input.svg'
-import { fadeInFromBelow } from "../Header/styles"
+import { fadeIn, fadeInImage, fadeInLeftToRight, fadeInLine, scaleUp, spin, OverFlowHidden, fadeInFromBelow } from "../../styles"
 import { inViewProp } from "../../types"
 
-export const Wrapper = styled(Section)`
-    padding-top: 270px;
+export const Wrapper = styled.section`
+    padding: 270px 80px 0;
+    position: relative;
 `
 export const IntroBackground = styled.div`
     position: absolute;
@@ -156,7 +155,7 @@ export const AnimationLine = styled(OverFlowHidden)<inViewProp>`
 `
 export const AnimationSpinner = styled.div<inViewProp>`
     position: absolute;
-    top: 10px;
+    top: -20px;
     right: -40px;
     opacity: 0;
     animation: ${({ inView }) => 

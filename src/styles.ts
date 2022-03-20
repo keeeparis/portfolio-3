@@ -72,11 +72,45 @@ export const translateLeftToRight = keyframes`
         transform: translateX(0)
     }
 `
+export const translateLeftToRight120 = keyframes`
+    0%, 65% {
+        opacity: 0;
+        transform: translateX(-120%)
+    } 
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+`
 export const traslateFromBelow = keyframes`
     0%, 75% {
         height: 0;
     }
     100% {
         height: 100%;
+    }
+`
+export const fadeInFromBelow = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateY(75%);
+    }
+    75% {
+        opacity: 0;
+        transform: translateY(45%);
+    }     
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`
+export const articlesAnimation1 = keyframes`
+    0%, 50% {
+        opacity: 0;
+        transform: scale(0.2) translate(50%, -50%);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translate(0, 0);
     }
 `

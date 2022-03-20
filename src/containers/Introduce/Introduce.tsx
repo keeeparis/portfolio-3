@@ -15,7 +15,7 @@ const Introduce = () => {
     })
     
     return (
-        <I.Wrapper>
+        <I.Wrapper id='Introduce'>
             <Inner>
                 <I.Columns ref={ref}>
                     <I.Column>

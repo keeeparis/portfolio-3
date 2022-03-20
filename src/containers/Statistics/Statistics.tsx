@@ -19,7 +19,7 @@ const Statistics = () => {
     })
 
     return (
-        <S.Wrapper ref={ref}>
+        <S.Wrapper ref={ref} id='Statistics'>
             <Inner>
                 <S.DisplayFlex>
                     <S.Column1>

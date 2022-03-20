@@ -1,11 +1,10 @@
 import styled, { css } from "styled-components";
 import { inViewProp } from "../../types";
-import { fadeInFromBelow } from "../Header/styles";
-import { fadeIn, Section, translateLeftToRight, fadeInImage } from "../Main/styles";
+import { fadeIn, translateLeftToRight, fadeInFromBelow } from "../../styles";
 
-export const Wrapper = styled(Section)`
-    padding-top: 56px;
-    padding-bottom: 112px;
+export const Wrapper = styled.section`
+    position: relative;
+    padding: 56px 80px 112px;
 `
 export const DisplayFlex = styled.div`
     display: flex;
