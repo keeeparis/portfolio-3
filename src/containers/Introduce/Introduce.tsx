@@ -1,11 +1,12 @@
-import { Inner, OverFlowHidden } from '../../styles'
+import { useInView } from 'react-intersection-observer'
+
 import * as I from './styles'
 import cubes1Icon from '../../media/illustr_cubes-01.svg'
 import cubes2Icon from '../../media/illustr_cubes-02.svg'
 import avatarIcon from '../../media/introducing-ava.jpg'
 import playTriangle from '../../media/play-triangle.svg'
-import { useInView } from 'react-intersection-observer'
-import { useEffect } from 'react'
+
+import { Inner, OverFlowHidden } from '../../styles'
 
 const Introduce = () => {
     const [ref, inView] = useInView({ 

@@ -1,9 +1,10 @@
-import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
-import Button from '../../components/Button/Button'
-import GraphColumn from '../../components/GraphColumn/GraphColumn'
-import { Inner, OverFlowHidden } from '../../styles'
+
+import Button from '../../components/Button'
+import GraphColumn from '../../components/GraphColumn'
 import * as S from './styles'
+
+import { Inner, OverFlowHidden } from '../../styles'
 
 const mockData = [
     {h: '20M+', t: 'People who are joined Personal Investments'},

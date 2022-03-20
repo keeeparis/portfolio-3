@@ -1,8 +1,10 @@
+import { useInView } from 'react-intersection-observer'
+
 import * as H from './styles'
 import LogoIcon from '../../media/logo-full.svg'
-import { Inner } from '../../styles'
-import { useInView } from 'react-intersection-observer'
 import Button from '../../components/Button/Button'
+
+import { Inner } from '../../styles'
 
 const Header = () => {
     const [ref, inView] = useInView({

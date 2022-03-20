@@ -1,10 +1,11 @@
+import { useInView } from 'react-intersection-observer'
+
 import * as I from './styles'
 import graphIcon from '../../media/graph_invest-bg.svg'
 import lineIcon from '../../media/hero_graph-line.svg'
 import spinIcon from '../../media/circle-txt_learn.svg'
 
 import { Inner, OverFlowHidden } from '../../styles'
-import { useInView } from 'react-intersection-observer'
 
 const Intro = () => {
     const [ref, inView] = useInView({
