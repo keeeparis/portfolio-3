@@ -34,6 +34,7 @@ export const Navigation = styled.div`
 `
 export const NavLink = styled.a`
     position: relative;
+    width: fit-content;
     display: block;
     margin-right: 20px;
     margin-bottom: -3px;

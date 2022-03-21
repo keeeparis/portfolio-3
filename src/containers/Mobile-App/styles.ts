@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { fadeInFromBelow } from "../../styles";
+import { fadeIn, fadeInFromBelow, translateLeftToRight } from "../../styles";
 import { inViewProp } from "../../types";
 import phoneBg from '../../media/app_phone-bg.svg'
 import phoneLine from '../../media/app_phone-line.svg'
@@ -23,13 +23,18 @@ export const H2 = styled.h2<inViewProp>`
         `
     };
 `
-export const Links = styled.div`
+export const Links = styled.div<inViewProp>`
     margin-top: 60px;
+    opacity: 0;
     display: flex;
     align-items: center;
     gap: 15px;
+    animation: ${({ inView }) => 
+        inView && css`
+            ${translateLeftToRight} 1s linear forwards;
+        `
+    };
 `
-
 export const Button = styled.a`
     position: relative;
     z-index: 1;
@@ -86,7 +91,14 @@ export const HoverBackground = styled.div`
     transform: translateX(-110%);
     transition-duration: .5s;
 `
-export const Column2 = styled.div``
+export const Column2 = styled.div<inViewProp>`
+    opacity: 0;
+    animation: ${({ inView }) => 
+        inView && css`
+            ${fadeIn} 1s linear forwards;
+        `
+    };
+`
 export const PhoneBg = styled.div`
     overflow: hidden;
     padding-top: 40px;
@@ -98,9 +110,9 @@ export const PhoneBg = styled.div`
     background-size: auto;
     background-repeat: no-repeat;
 `
-export const Phone = styled.div<inViewProp>`
+export const Phone = styled.div`
     position: relative;
-    transform: translateY(40px);
+    transform: translateY(5px);
 
     img{
         width: 271px;
@@ -118,4 +130,49 @@ export const PhoneLine = styled.div`
     background-size: auto;
     height: 259px;
 `
-export const Column3 = styled.div``
+export const Column3 = styled.div<inViewProp>`
+    max-width: 376px;
+    flex: 1;
+    opacity: 0;
+    animation: ${({ inView }) => 
+        inView && css`
+            ${translateLeftToRight} 1s linear forwards;
+        `
+    };
+
+    h3 {
+        text-transform: capitalize;
+        font-weight: 500;
+        margin-bottom: 35px;
+    }
+`
+export const Form = styled.form`
+    position: relative;
+`
+export const Input = styled.input`
+    display: block;
+    width: 100%;
+    height: 58px;
+    padding: 8px 20px 8px 0;
+    margin-bottom: 24px;
+    border-style: solid;
+    border-width: 0px 0px 2px;
+    background-color: transparent;
+    font-family: niveau-grotesk;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    border-bottom-color: rgba(34, 43, 64, 0.15);
+    color: #222b40;
+
+    ::placeholder {
+        transition-duration: .3s;
+        color: currentColor;
+    }
+
+    :focus::placeholder {
+        transition-duration: .3s;
+        color: transparent;
+    }
+`

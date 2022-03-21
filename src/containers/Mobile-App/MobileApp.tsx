@@ -6,7 +6,7 @@ import AppStoreWhite from '../../media/app_app-store-white.svg'
 import GooglePay from '../../media/app_google-play.svg'
 import GooglePayWhite from '../../media/app_google-play-white.svg'
 import phoneIcon from '../../media/app_phone.png'
-import { useEffect } from 'react'
+import Button from '../../components/Button'
 
 const MobileApp = () => {
     const [ref, inView] = useInView({
@@ -14,18 +14,16 @@ const MobileApp = () => {
         threshold: 0.3
     })
 
-    const [phoneRef, phoneInView, entry] = useInView({ })
-
     return (
         <M.Wrapper id='Mobile-App' ref={ref}>
-            <Inner ref={phoneRef}>
+            <Inner>
                 <M.Columns>
                     <M.Column1>
                         <OverFlowHidden><M.H2 inView={inView}>Download</M.H2></OverFlowHidden>
                         <OverFlowHidden><M.H2 inView={inView}>investment</M.H2></OverFlowHidden>
                         <OverFlowHidden><M.H2 inView={inView}>mobile app</M.H2></OverFlowHidden>
 
-                        <M.Links>
+                        <M.Links inView={inView}>
                             <M.Button>
                                 <M.HoverBackground />
                                 <M.TextWrapper>
@@ -52,16 +50,31 @@ const MobileApp = () => {
                         </M.Links>
                     </M.Column1>
 
-                    <M.Column2>
+                    <M.Column2 inView={inView}>
                         <M.PhoneBg >
-                            <M.Phone inView={phoneInView} >
+                            <M.Phone>
                                 <img src={phoneIcon} alt="" />
                                 <M.PhoneLine />
                             </M.Phone>
                         </M.PhoneBg>
                     </M.Column2>
 
-                    <M.Column3></M.Column3>
+                    <M.Column3 inView={inView}>
+                        <h3>get in touch</h3>
+                        <M.Form action="/">
+                            <M.Input type="text" placeholder='your name' required/>
+                            <M.Input type="text" placeholder='your email' required/>
+                            <Button
+                                width='170px'
+                                backgroundColor='#222b40'
+                                minHeight='54px'
+                                textDistance='30px'
+                                transformValue='translateY(-150%)'
+                            >
+                                Submit
+                            </Button>
+                        </M.Form>
+                    </M.Column3>
                 </M.Columns>
             </Inner>
         </M.Wrapper>
