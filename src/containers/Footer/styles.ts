@@ -53,11 +53,45 @@ export const LI = styled.li`
         font-weight: 300;       
         transition: all .3s ease;
 
-        :hover {
-            opacity: 1;
-        }
+        :hover { opacity: 1; }
     }
 `
 export const UnderLogoDiv = styled.div`
-    
+    max-width: 210px;
+    opacity: .8;
+    color: #f8f6f1;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+`
+export const IconWrap = styled.a`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    border: 1px solid rgba(248, 246, 241, 0.25);
+    transition: all .1s ease-in-out;
+
+    img { filter: invert(1); }
+    :hover { border-color: rgba(248, 246, 241) }
+`
+export const SocialWrap = styled.div`
+    display: flex;
+    flex-direction: row;
+`
+export const CopyrightLink = styled.a`
+    display: flex;
+    align-items: center;
+    color: rgba(248, 246, 241, 0.7);
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .1s ease-in-out;
+
+    img { margin-right: 5px; };
+    :hover { color: rgba(248, 246, 241) };
 `
