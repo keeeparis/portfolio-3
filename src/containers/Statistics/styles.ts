@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
+
 import { inViewProp } from "../../types";
-import { fadeIn, translateLeftToRight, fadeInFromBelow } from "../../styles";
+import { fadeIn, translateLeftToRight, fadeInFromBelow } from "../../styles/animations";
 
 export const Wrapper = styled.section`
     position: relative;

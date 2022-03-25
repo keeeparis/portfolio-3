@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { fadeIn, translateLeftToRight, fadeInFromBelow } from "../../styles";
+import { fadeIn, translateLeftToRight, fadeInFromBelow } from "../../styles/animations";
 import { inViewProp } from '../../types';
 
 export const Wrapper = styled.section`

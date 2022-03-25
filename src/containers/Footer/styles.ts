@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
-import { fadeIn } from "../../styles";
+
+import { fadeIn } from "../../styles/animations";
 import { inViewProp } from "../../types";
 
 export const Wrapper = styled.section`

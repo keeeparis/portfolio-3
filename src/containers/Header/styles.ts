@@ -1,6 +1,7 @@
-import styled, { css, keyframes } from "styled-components";
-import { fadeInFromBelow, OverFlowHidden } from "../../styles";
+import styled, { css } from "styled-components";
+import { OverFlowHidden } from "../../styles/index";
 import { inViewProp } from "../../types";
+import { fadeInFromBelow } from '../../styles/animations'
 
 export const Header = styled.header`
     display: block;

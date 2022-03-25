@@ -1,8 +1,9 @@
 import styled, { css } from "styled-components"
+
 import graphIcon from '../../media/graph_grow-bg.svg'
 import popUpText from '../../media/graph_grow-val.svg'
 
-import { fadeInLeftToRight, traslateFromBelow } from "../../styles"
+import { fadeInLeftToRight, traslateFromBelow } from "../../styles/animations"
 import { inViewProp } from "../../types"
 
 export const GraphWrap = styled.div`

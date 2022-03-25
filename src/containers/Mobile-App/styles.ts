@@ -1,8 +1,10 @@
 import styled, { css } from "styled-components";
-import { fadeIn, fadeInFromBelow, translateLeftToRight } from "../../styles";
-import { inViewProp } from "../../types";
+
 import phoneBg from '../../media/app_phone-bg.svg'
 import phoneLine from '../../media/app_phone-line.svg'
+
+import { fadeIn, fadeInFromBelow, translateLeftToRight } from "../../styles/animations";
+import { inViewProp } from "../../types";
 
 export const Wrapper = styled.section`
     position: relative;

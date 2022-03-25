@@ -1,9 +1,10 @@
 import styled, { css } from "styled-components";
+
 import graphPortfolio from '../../media/graph_portfolio-bg.svg'
 import graphLine from '../../media/graph_portfolio-line.svg'
 import dollar from '../../media/read_dollar.svg'
 
-import { articlesAnimation1, fadeInFromBelow, fadeInLine, translateLeftToRight120 } from "../../styles";
+import { articlesAnimation1, fadeInFromBelow, fadeInLine, translateLeftToRight120 } from "../../styles/animations";
 import { inViewProp } from "../../types";
 
 export const Wrapper = styled.section`

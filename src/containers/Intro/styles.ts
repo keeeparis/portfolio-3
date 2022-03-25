@@ -1,7 +1,10 @@
 import styled, { css } from "styled-components"
+
 import arrowIcon from '../../media/arrow-input.svg'
-import { fadeIn, fadeInImage, fadeInLeftToRight, fadeInLine, scaleUp, spin, OverFlowHidden, fadeInFromBelow } from "../../styles"
+
+import { fadeIn, fadeInImage, fadeInLeftToRight, fadeInLine, scaleUp, spin, fadeInFromBelow } from "../../styles/animations"
 import { inViewProp } from "../../types"
+import { OverFlowHidden } from '../../styles/index'
 
 export const Wrapper = styled.section`
     padding: 270px 80px 0;
