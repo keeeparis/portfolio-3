@@ -1,8 +1,6 @@
 import styled, { css } from "styled-components"
 
-export const Button = styled.a<{
-    transformValue: string | undefined
-}>`
+export const Button = styled.a<{ transformValue?: string }>`
     position: relative;
     z-index: 1;
     display: flex;
